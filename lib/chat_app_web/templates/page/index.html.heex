@@ -1,0 +1,37 @@
+<div id="chat-container">
+  <div id="login-interface" class="auth-section">
+    <h2>Enter Chat Room</h2>
+    <form id="username-form" class="form-group">
+      <div class="input-field">
+        <input type="text" id="username-input" placeholder="Enter your username (min 3 characters)" required />
+        <div id="username-error" class="error-message"></div>
+      </div>
+      <button type="submit" class="btn">Join Chat</button>
+    </form>
+  </div>
+
+  <div id="chat-interface" style="display: none;">
+    <div class="chat-sidebar">
+      <div class="header">
+        <h3>Online Users</h3>
+      </div>
+      <ul id="online-users" class="users-list">
+        <!-- Online users will be listed here -->
+      </ul>
+    </div>
+    <div class="chat-main">
+      <div class="chat-header">
+        <h2>Chat Room</h2>
+      </div>
+      <div id="messages" class="messages-container">
+        <!-- Messages will appear here -->
+      </div>
+      <div class="message-input-container">
+        <div class="input-group">
+          <input type="text" id="message-input" placeholder="Type a message..." />
+          <button id="send-button" class="btn">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
